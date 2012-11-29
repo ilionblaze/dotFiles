@@ -1,0 +1,18 @@
+shell -${SHELL}
+caption always "%{= kc}%H (system load: %l)%-21=%{= .m}%D %d.%m.%Y %0c"
+#caption always "%3n %t%? @%u%?%? [%h]%?%=%c"
+#caption always "%n(%t) : %C"
+defscrollback 20000
+startup_message off
+hardstatus on
+hardstatus alwayslastline
+
+vbell off
+
+bind ' ' windowlist -b
+
+
+# disable xoff
+bind ^s
+bind s
+
