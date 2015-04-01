@@ -1,14 +1,24 @@
+#Make sure Screen starts login shells and loads profiles
 shell -${SHELL}
+
+# Set the caption
 caption always "%{= kc}%H (system load: %l)%-21=%{= .m}%D %d.%m.%Y %0c"
 #caption always "%3n %t%? @%u%?%? [%h]%?%=%c"
 #caption always "%n(%t) : %C"
+
+#Set Scrollback to 20,000 lines
 defscrollback 20000
+
+# Don't display the copyright page
 startup_message off
+
 hardstatus on
 hardstatus alwayslastline
 
+# stop tab-completion flash 
 vbell off
 
+# Get the screen list with Ctrl-A [SPACE]
 bind ' ' windowlist -b
 
 
